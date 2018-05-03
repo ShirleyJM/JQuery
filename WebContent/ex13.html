@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<input id="btn" type="button" VALUE="js테스트버튼" />
+		<h1 id="display">이름출력영역</h1>
+		
+		<input id="btn" type="button" VALUE="버튼2" />
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	var btn= $("#btn").on("click", function(){/*  동작이 들어가는 자리*/
+		console.log("btn click");	
+	$("#display").css("color","red");
+	$("#display").prepend("진미 쥔미");
+	$("#display").text("이정재");
+	
+	});
+
+	
+	
+</script>
+
+
+</html>

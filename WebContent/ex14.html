@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		<input id="btn" type="button" VALUE="버튼2" />
+		
+	</ul>
+</body>
+
+<script type="text/javascript">
+	$("li").on("click", function(){
+		var dom= $(this)//클릭한 부분에 관한 부분만 출력됨.리스트 사용시에는 꼭 써야함. 안쓰면 전부 출력됨.
+		var idName= dom.attr("class");//attr(속성값)
+		console.log(idName);
+		
+	});	
+
+
+</script>
+
+</html>

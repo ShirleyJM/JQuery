@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡<br /> abcdefg </p>
+</body>
+	
+	<script type="text/javascript">
+		$("#p1").html("이제<strong>제발</strong>그만좀");//<b>보다 <strong> 사용 권장함.
+		/* $("#p1").text("이제<strong>제발</strong>그만좀"); */
+		
+		var str01 = $("#p2").html();
+		console.log(str01);
+		var str02= $("#p2").text();
+		console.log(str02);
+		</script>
+
+</html>
